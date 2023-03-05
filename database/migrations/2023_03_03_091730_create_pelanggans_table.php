@@ -15,7 +15,12 @@ class CreatePelanggansTable extends Migration
     {
         Schema::create('pelanggans', function (Blueprint $table) {
             $table->id();
-            $table->nama('string');
+            $table->string("nama");
+            $table->string("gender");
+            $table->string("nohp");
+            $table->string("email");
+            $table->string("password");
+            $table->string("alamat");
             $table->timestamps();
         });
     }
