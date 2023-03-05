@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\pelanggan;
 use Illuminate\Http\Request;
+use validator;
 
 class PelangganController extends Controller
 {
@@ -13,8 +14,9 @@ class PelangganController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    {   
+        $pelanggan = Pelanggan::all()->toArray();
+        return array_reverse($pelanggan);
     }
 
     /**
@@ -24,7 +26,7 @@ class PelangganController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
