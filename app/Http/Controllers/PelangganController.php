@@ -19,6 +19,7 @@ class PelangganController extends Controller
         return array_reverse($pelanggan);
     }
 
+    //wandi
     /**
      * Show the form for creating a new resource.
      *
